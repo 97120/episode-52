@@ -8,10 +8,11 @@ const ComfirmAndReview = () => {
     return (
         <Box sx={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
             <h1>Confirm And review</h1>
-            <h2>{ dayjs(bookingDate).format("DD/MM/YYYY")}</h2>
-            <h2>{ user?.name}</h2>
-            <h2>{ user?.nrcNumber}</h2>
-            <h2>{ user?.email}</h2>
+            <h2>Date:{dayjs(bookingDate).format("DD/MM/YYYY")}</h2>
+            <h2>Time:{time}</h2>
+            <h2>Name:{ user?.name}</h2>
+            <h2>NRCNumber:{ user?.nrcNumber}</h2>
+            <h2>Email:  { user?.email}</h2>
         </Box>
     )
 }
